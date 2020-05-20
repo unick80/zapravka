@@ -9,6 +9,7 @@ import Icon24Add from '@vkontakte/icons/dist/24/add';
 //import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 //import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
+import Separator from '@vkontakte/vkui/dist/components/Separator/Separator';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -30,6 +31,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				}
 				<CellButton before={<Icon24Add />} onClick={go} data-to="new">Добавить заявку</CellButton>
 			</Div>
+			<Separator style={{ margin: '12px 0' }} />
 	</Panel>
 );
 
